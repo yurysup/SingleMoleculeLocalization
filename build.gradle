@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'by.rfe.sml'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+wrapper {
+    gradleVersion = '6.2.2'
+}
