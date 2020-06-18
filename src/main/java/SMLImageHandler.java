@@ -73,7 +73,7 @@ public class SMLImageHandler {
 	public int maxSpotRectSize = 500;  //max size of fit rectangle	
 	public double minCircularity = 0.5;  	
 	public double maxChi2Value = 100;  	//max value of Chi2; 
-	public int multiplier = 4;
+	public int multiplier = 8;
 	public boolean removeOverlappedROI = true;
 	public int ROIsCount = 0;
 	public int super_imagePointsCount;
@@ -1036,9 +1036,9 @@ public class SMLImageHandler {
 					int slice = fitResults.getSlice(i);
 					
 					if(slice == slice_prev && (Math.abs(x - x_prev) < 0.01 && Math.abs(y - y_prev) < 0.01))  {
-						slice_prev = slice;
-						x_prev = x;
-						y_prev = y;
+						//slice_prev = slice;
+						//x_prev = x;
+						//y_prev = y;
 					}
 					else  {
 						superResPoints[super_imagePointsCount] = new SuperResPoint(x, y, slice);						

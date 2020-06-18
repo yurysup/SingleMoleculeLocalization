@@ -77,7 +77,7 @@ public class SMLWizard extends JWizardFrame{
 			
 			imageHandler.readSettingsFromFile();
 
-			setSize(580, 512);
+			setSize(680, 800);
 			Utilities.centerComponentOnScreen(this);
 			showWizard();
 
